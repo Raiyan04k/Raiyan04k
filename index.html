@@ -1,1 +1,90 @@
-Index 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Raiyan</title>
+    <link rel="icon" href="IRLogo.png" type="image/png"> <!-- Corrected type attribute -->
+    <style>
+        @font-face {
+            font-family: 'AbrahamDemo';
+            src: url('1 Abraham Demo.woff') format('woff');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #C49A77;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        .centered-text {
+            font-size: 100px;
+            color: #D5B89F;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            animation: fadeInText 3s forwards;
+            font-family: 'AbrahamDemo', sans-serif;
+            margin-bottom: 30px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 25px;
+            color: #896B53;
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: 'AbrahamDemo', sans-serif;
+        }
+
+        a:hover {
+            border-bottom: 3px solid #D5B89F;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeInText {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Additional CSS for the image transition */
+        .keyboard-image {
+            width: 300px; /* Adjust the width as needed */
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            animation: fadeInImage 3s forwards;
+            margin-bottom: 20px; /* Spacing between the image and the text */
+        }
+
+        @keyframes fadeInImage {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Keyboard image -->
+    <div class="centered-text">Intesar Raiyan Rahman</div>
+    <img src="Keyboard.png" alt="Keyboard" class="keyboard-image">
+    <div class="navigation">
+        <a href="About.html">About</a>
+        <a href="Education.html">Education</a>
+        <a href="Experience.html">Experience</a>
+        <a href="Projects.html">Projects & Resume</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</body>
+</html>
