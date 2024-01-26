@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>About Raiyan</title>
-    <link rel="icon" href="IRLogo.png" type="image/png"> <!-- Favicon -->
+    <link rel="icon" href="IRLogo.png" type="image/png">
     <style>
         @font-face {
             font-family: 'AbrahamDemo';
@@ -12,36 +12,32 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #C49A77; /* Specified color */
-            height: 100vh;
+            background: url('Wallpaper3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            font-family: 'AbrahamDemo', Arial, sans-serif;
+            color: #f0e6d2;
+        }
+
+        .header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            flex-direction: column;
-            font-family: 'AbrahamDemo', Arial, sans-serif; /* Custom and fallback font */
+            padding: 10px 30px;
         }
 
-        h1 {
-            font-size: 40px; /* Adjust as needed */
-            color: #896B53; /* Specified text color */
-        }
-
-        p {
-            color: #896B53; /* Specified text color */
-            font-size: 20px; /* Adjust as needed */
-            text-align: center;
-            margin-bottom: 20px; /* Spacing between text and links */
+        .title {
+            font-size: 40px;
         }
 
         .navigation {
             display: flex;
             justify-content: center;
-            margin-top: 20px; /* Spacing between text and links */
         }
 
         a {
             font-size: 25px;
-            color: #896B53;
+            color: #f0e6d2;
             text-decoration: none;
             margin: 0 10px;
         }
@@ -49,19 +45,37 @@
         a:hover {
             border-bottom: 3px solid #D5B89F;
         }
+
+        h1 {
+            font-size: 40px;
+            color: #896B53;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="title">Intesar Raiyan Rahman</div>
+        <div class="navigation">
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Education.html">Education</a>
+            <a href="Experience.html">Experience</a>
+            <a href="Projects.html">Projects & Resume</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
     <h1>About Intesar Raiyan Rahman</h1>
     <p>
         [Content about Intesar Raiyan Rahman...]
     </p>
-    <div class="navigation">
-        <a href="HomePage.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Education.html">Education</a>
-        <a href="Projects.html">Projects & Resume</a>
-        <a href="Contact.html">Contact</a>
-    </div>
 </body>
 </html>

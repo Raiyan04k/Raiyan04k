@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Education</title>
+    <title>About Raiyan</title>
     <link rel="icon" href="IRLogo.png" type="image/png">
     <style>
         @font-face {
@@ -11,80 +11,102 @@
 
         body {
             margin: 0;
-            padding: 20px;
-            background-color: #C49A77;
+            padding: 0;
+            background: url('Wallpaper3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
             font-family: 'AbrahamDemo', Arial, sans-serif;
-            color: #896B53;
+            color: #f0e6d2;
         }
 
-        h1, h2 {
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .title {
             font-size: 40px;
-            color: #896B53;
-            text-align: center;
-        }
-
-        p, td {
-            font-size: 18px;
-            text-align: left; /* Align text to the left for better readability */
-            margin: 10px 0; /* Adjusted margins for spacing */
         }
 
         .navigation {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
         }
 
         a {
             font-size: 25px;
-            color: #896B53;
+            color: #f0e6d2;
             text-decoration: none;
             margin: 0 10px;
-            transition: color 0.3s;
         }
 
         a:hover {
-            color: #D5B89F;
+            border-bottom: 3px solid #D5B89F;
+        }
+
+        h1, h2 {
+            color: #896B53;
+            text-align: center;
         }
 
         .edu-section {
             display: flex;
+            justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
+            margin-top: 20px;
         }
 
-        .edu-text {
-            max-width: 70%; /* Adjusted width */
+        .edu-text, .edu-image {
+            margin: 10px;
         }
 
-        .edu-image {
-            max-width: 20%; /* Adjusted width for smaller logo */
+        .edu-text p {
+            font-size: 20px;
+            text-align: justify;
         }
 
-        img {
-            width: 100%; /* Ensure the image scales within its container */
+        .edu-image img {
+            width: 200px; /* Adjust as needed */
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            margin: 20px 0;
+            color: #f0e6d2;
         }
 
         th, td {
             border: 1px solid #896B53;
             padding: 8px;
+            text-align: left;
         }
 
         th {
             background-color: #D5B89F;
         }
 
-        .shadow-effect {
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        @media (max-width: 600px) {
+            .edu-section {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="title">Intesar Raiyan Rahman</div>
+        <div class="navigation">
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Education.html">Education</a>
+            <a href="Experience.html">Experience</a>
+            <a href="Projects.html">Projects & Resume</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
     <h1>My Education</h1>
     <div class="edu-section">
         <div class="edu-text">
@@ -100,6 +122,7 @@
         </div>
     </div>
     <h2>Relevant Courses Taken</h2>
+
     <table>
         <tr>
             <th>Course Code</th>
@@ -146,14 +169,6 @@
             <td>Description of Course 2</td>
         </tr>
 
-
     </table>
-    <div class="navigation">
-        <a href="HomePage.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Experience.html">Experience</a>
-        <a href="Projects.html">Projects & Resume</a>
-        <a href="Contact.html">Contact</a>
-    </div>
 </body>
 </html>
