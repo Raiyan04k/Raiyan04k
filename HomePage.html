@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Raiyan</title>
-    <link rel="icon" href="IRLogo.png" type="image/png"> <!-- Corrected type attribute -->
+    <title>About Intesar Raiyan Rahman</title>
+    <link rel="icon" href="IRLogo.png" type="image/png">
     <style>
         @font-face {
             font-family: 'AbrahamDemo';
@@ -12,34 +12,33 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #C49A77;
+            background: url('WWallpaper3.jpg') no-repeat center center fixed; 
+            background-size: cover;
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             font-family: Arial, sans-serif;
+            color: #f0e6d2; /* Adjust text color for visibility */
         }
 
-        .centered-text {
-            font-size: 100px;
-            color: #D5B89F;
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
-            animation: fadeInText 3s forwards;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .title {
+            font-size: 40px; /* Adjust size as needed */
             font-family: 'AbrahamDemo', sans-serif;
-            margin-bottom: 30px;
         }
 
         .navigation {
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
         }
 
         a {
             font-size: 25px;
-            color: #896B53;
+            color: #f0e6d2; /* Adjust for visibility */
             text-decoration: none;
             margin: 0 10px;
             font-family: 'AbrahamDemo', sans-serif;
@@ -49,26 +48,27 @@
             border-bottom: 3px solid #D5B89F;
         }
 
-        .logo {
-            margin-bottom: 20px;
+        .content {
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+            height: 100%; /* Take full available height */
+            margin-top: 0; /* Adjusted margin */
+            padding: 0 30px;
         }
 
-        @keyframes fadeInText {
-            to {
-                opacity: 1;
-            }
+        .paragraph {
+            max-width: 800px;
+            font-size: 30px;
+            text-align: center; /* Center text inside the paragraph */
+            font-family: 'AbrahamDemo', sans-serif; /* Match font with other texts */
+            opacity: 0; /* Set initial opacity for fade-in effect */
+            transition: opacity 2s ease-in-out; /* Transition effect for the paragraph */
+            animation: fadeInParagraph 3s forwards; /* Use animation for fade-in */
         }
 
-        /* Additional CSS for the image transition */
-        .keyboard-image {
-            width: 300px; /* Adjust the width as needed */
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
-            animation: fadeInImage 3s forwards;
-            margin-bottom: 20px; /* Spacing between the image and the text */
-        }
-
-        @keyframes fadeInImage {
+        @keyframes fadeInParagraph {
             to {
                 opacity: 1;
             }
@@ -76,15 +76,22 @@
     </style>
 </head>
 <body>
-     <!-- Keyboard image -->
-    <div class="centered-text">Intesar Raiyan Rahman</div>
-    <img src="Keyboard.png" alt="Keyboard" class="keyboard-image">
-    <div class="navigation">
-        <a href="About.html">About</a>
-        <a href="Education.html">Education</a>
-        <a href="Experience.html">Experience</a>
-        <a href="Projects.html">Projects & Resume</a>
-        <a href="Contact.html">Contact</a>
+    <div class="header">
+        <div class="title">Intesar Raiyan Rahman</div>
+        
+        <div class="navigation">
+             
+                <a href="HomePage.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Education.html">Education</a>
+                <a href="Experience.html">Experience</a>
+                <a href="Projects.html">Projects & Resume</a>
+                <a href="Contact.html">Contact</a>
+            
+        </div>
+    </div>
+    <div class="content">
+        <div class="paragraph">I am a Computing Science student at the University of Alberta <br> My main focus is Data Structurs & Algorithms, Software Systems, Game AI, Machine Learning with an equivalent mathematics focus on Statistics, Discrete Math, Ring Theory and last but not least Psychological Research in Development. </div>
     </div>
 </body>
 </html>
